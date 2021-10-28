@@ -1,0 +1,14 @@
+server:
+  port: 8081
+dubbo:
+  application:
+    name: boot-order-service-consumer
+  registry:
+    address: 192.168.229.129:2181
+    protocol: zookeeper
+  protocol:
+    name: dubbo
+    port: 20880
+  monitor:
+    protocol: registry
+
